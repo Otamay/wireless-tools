@@ -204,7 +204,7 @@ function parse_scan_results(block) {
             parsed.frequency = parseInt(match[1], 10);
         }
 
-        if ((match = entry.match(/([-][0-9]+)\t/))) {
+        if ((match = entry.match(/([-]*[0-9]+)\t\[/))) {
             parsed.signalLevel = parseInt(match[1], 10);
         }
 
